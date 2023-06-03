@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Color Change</title>
+		<style>
+			*{font-size:50px; font-family:Calibri}
+			body{background-color:white}
+		</style>
+		<script>
+			function cc()
+			{
+				event.preventDefault();
+				let color = ["lightyellow", "brown", "lightpink", "orange"];
+				let r = parseInt(Math.random() * color.length);
+				document.body.style.backgroundColor=color[r];
+			}
+		</script>
+	</head>
+	<body>
+	<center>
+		<h1>Happy Holi</h1>
+		<form onsubmit = "cc()">
+			<input type="submit" value="Click to Change"/>
+		</form>
+	</center>
+	</body>
+
+
+</html>
